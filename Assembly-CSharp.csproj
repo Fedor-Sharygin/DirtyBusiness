@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{68A38A8C-5961-141D-CE45-8222639C3EBA}</ProjectGuid>
+    <ProjectGuid>{0159FA02-4842-D4F6-F32E-AB58597BD6EA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MinigameRequiredElement.cs" />
-    <Compile Include="Assets\Scripts\MinigameHolderBase.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\ObjectSocket.cs" />
+    <Compile Include="Assets\Scripts\JanitorController.cs" />
+    <Compile Include="Assets\Scripts\PlayerControls.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
