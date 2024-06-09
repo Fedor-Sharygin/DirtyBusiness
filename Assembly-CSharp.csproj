@@ -60,6 +60,12 @@
     <Compile Include="Assets\Scripts\ObjectSocket.cs" />
     <Compile Include="Assets\Scripts\JanitorController.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
+    <Compile Include="Assets\Scripts\InteractableArea.cs" />
+    <Compile Include="Assets\Scripts\WeaponComponent.cs" />
+    <Compile Include="Assets\Scripts\WeaponDescriptions\WeaponDescription.cs" />
+    <Compile Include="Assets\Scripts\EnemyDescriptions\EnemyDescription.cs" />
+    <Compile Include="Assets\Scripts\HealthComponent.cs" />
+    <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

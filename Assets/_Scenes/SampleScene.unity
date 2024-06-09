@@ -218,6 +218,8 @@ GameObject:
   - component: {fileID: 1577576362}
   - component: {fileID: 1577576361}
   - component: {fileID: 1577576363}
+  - component: {fileID: 1577576365}
+  - component: {fileID: 1577576364}
   m_Layer: 0
   m_Name: TestObject
   m_TagString: Untagged
@@ -237,8 +239,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062281aa8aa26d1489758a9de97293a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_WeaponComponent: {fileID: 0}
   m_MouseMaxDist: 25
-  m_CameraDistPercent: 0.1
+  m_CameraMaxDist: 5
   m_Speed: 5
   m_CameraTransform: {fileID: 519420032}
 --- !u!4 &1577576362
@@ -304,6 +307,36 @@ MonoBehaviour:
   m_DefaultActionMap: Basic Player Controls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1577576364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577576360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3cc00e174c0b84185be11089d9c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CurrentWeapon: {fileID: 0}
+--- !u!114 &1577576365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577576360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8645a1f737699049a9d3b1c09f28fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HealthPoints: 100
+  m_DeathReaction:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DamageReactions: []
 --- !u!1 &1676571588
 GameObject:
   m_ObjectHideFlags: 0
