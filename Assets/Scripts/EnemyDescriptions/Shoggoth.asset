@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1380c13a8e598e74dbdee9333ee2ff49, type: 3}
-  m_Name: Soaker
+  m_Script: {fileID: 11500000, guid: 96fc4b5ef0fcd4c459126e3ff3759a61, type: 3}
+  m_Name: Shoggoth
   m_EditorClassIdentifier: 
-  m_DamageType: 1
-  m_Damage: 5
-  m_Distance: 10
-  m_RateOfFire: 0.05
-  m_WeaponSprite: {fileID: 0}
+  m_Speed: 0.5
+  m_Attacks:
+  - {fileID: 11400000, guid: 52afcee38859e4742bb396d1d3c58b1e, type: 2}

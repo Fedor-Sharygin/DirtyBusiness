@@ -13,6 +13,7 @@ public class WeaponComponent : MonoBehaviour
         }
     }
 
+    public float m_MinDist = .6f; //to avoid self-damage
     public WeaponDescription m_CurrentWeapon;
     public void Attack(Vector2 p_Direction)
     {
@@ -22,10 +23,10 @@ public class WeaponComponent : MonoBehaviour
         }
         m_TimeLeftBeforeAttack = m_CurrentWeapon.m_RateOfFire;
 
-        var ObjectHits = Physics2D.CircleCastAll((Vector2)transform.position + p_Direction * .6f, .5f, p_Direction, m_CurrentWeapon.m_Distance);
+        var ObjectHits = Physics2D.CircleCastAll((Vector2)transform.position + p_Direction * m_MinDist, .01f, p_Direction, m_CurrentWeapon.m_Distance);
         foreach (var ObjectHit in ObjectHits)
         {
-            var HPComp = ObjectHit.collider.GetComponent<HealthComponent>();
+            var HPComp = ObjectHit.collider.GetComponentInParent<HealthComponent>();
             if (HPComp == null)
             {
                 continue;

@@ -19,5 +19,5 @@ public struct DamageReaction
 public class EnemyDescription : ScriptableObject
 {
     public float m_Speed;
-    public DamageType[] m_Attacks;
+    public WeaponDescription[] m_Attacks;
 }

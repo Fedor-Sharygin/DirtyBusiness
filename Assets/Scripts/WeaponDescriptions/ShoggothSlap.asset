@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1380c13a8e598e74dbdee9333ee2ff49, type: 3}
-  m_Name: Soaker
+  m_Name: ShoggothSlap
   m_EditorClassIdentifier: 
-  m_DamageType: 1
-  m_Damage: 5
-  m_Distance: 10
-  m_RateOfFire: 0.05
+  m_DamageType: 0
+  m_Damage: 10
+  m_Distance: 1
+  m_RateOfFire: 1
   m_WeaponSprite: {fileID: 0}

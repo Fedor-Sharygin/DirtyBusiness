@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1380c13a8e598e74dbdee9333ee2ff49, type: 3}
   m_Name: Mop
   m_EditorClassIdentifier: 
-  m_DamageType: 0
-  m_Damage: 0
-  m_Distance: 0
+  m_DamageType: 3
+  m_Damage: 25
+  m_Distance: 1.5
+  m_RateOfFire: 1
   m_WeaponSprite: {fileID: 0}
