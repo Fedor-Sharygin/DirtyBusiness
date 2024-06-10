@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1380c13a8e598e74dbdee9333ee2ff49, type: 3}
-  m_Name: Soaker
+  m_Name: Bucket
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 5
-  m_Distance: 10
-  m_RateOfFire: 0.05
-  m_BlastRadius: 0.05
+  m_Damage: 50
+  m_Distance: 3
+  m_RateOfFire: 5
+  m_BlastRadius: 0.5
   m_MinCameraShake: 0
   m_MaxCameraShake: 0
   m_WeaponSprite: {fileID: 0}

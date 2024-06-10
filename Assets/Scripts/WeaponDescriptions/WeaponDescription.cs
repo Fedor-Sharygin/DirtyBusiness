@@ -20,11 +20,16 @@ public class WeaponDescription : ScriptableObject
     public DamageType m_DamageType;
     public int m_Damage;
 
+    [Space(5)]
     public float m_Distance;
     public float m_SqDistance { get { return m_Distance * m_Distance; } }
 
     public float m_RateOfFire; //time between shots
+    public float m_BlastRadius;
 
+    [Space(5)]
+    public float m_MinCameraShake;
+    public float m_MaxCameraShake;
     public Sprite m_WeaponSprite;
 }
 

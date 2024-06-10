@@ -3,8 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+
 public class JanitorController : MonoBehaviour
 {
+    public static float Interpolate(float p_Value, float p_MinInput, float p_MaxInput, float p_MinOutput, float p_MaxOutput)
+    {
+        p_Value = Mathf.Clamp(p_Value, p_MinInput, p_MaxInput);
+        return (p_Value - p_MinInput) / (p_MaxInput - p_MinInput) * (p_MaxOutput - p_MinOutput) + p_MinOutput;
+    }
+
+
     [SerializeField]
     private WeaponComponent m_WeaponComponent;
     private PlayerControls m_PlayerControls;
@@ -128,32 +137,66 @@ public class JanitorController : MonoBehaviour
     #endregion
 
     #region Interactions
+    [SerializeField]
+    private Transform m_CameraTransform;
+    [SerializeField]
+    private float m_CameraShakeRadiusMin = 1f;
+    [SerializeField]
+    private float m_CameraShakeRadiusMax = 8f;
     private void Attack(InputAction.CallbackContext p_Obj)
     {
-        m_WeaponComponent.Attack(m_CameraOffset.normalized);
-    }
-
-    private InteractableArea m_Interactable = null;
-    private void Interact(InputAction.CallbackContext p_Obj)
-    {
-        if (m_Interactable == null)
+        if (!m_WeaponComponent.Attack(m_CameraOffset.normalized))
         {
             return;
         }
 
-        m_Interactable.m_InteractionActions?.Invoke(m_WeaponComponent);
+        float ShakeRadius = Random.Range(m_WeaponComponent.m_CurrentWeapon.m_MinCameraShake, m_WeaponComponent.m_CurrentWeapon.m_MaxCameraShake);
+        float ShakeAngle = Random.Range(-Mathf.PI, Mathf.PI);
+        m_CameraTransform.localPosition = new Vector2(ShakeRadius * Mathf.Cos(ShakeAngle), ShakeRadius * Mathf.Sin(ShakeAngle));
+    }
+
+    [System.Serializable]
+    public struct InteractableDist
+    {
+        public InteractableArea m_Interactable;
+        public bool m_InRange;
+        public float m_SqDist;
+    }
+    [SerializeField]
+    private InteractableDist[] m_Interactables;
+    private void Interact(InputAction.CallbackContext p_Obj)
+    {
+        InteractableArea ClosestObj = null;
+        float MinSqDist = float.MaxValue;
+        foreach (var InterDist in m_Interactables)
+        {
+            if (!InterDist.m_InRange)
+            {
+                continue;
+            }
+
+            if (MinSqDist <= InterDist.m_SqDist)
+            {
+                continue;
+            }
+            MinSqDist = InterDist.m_SqDist;
+            ClosestObj = InterDist.m_Interactable;
+        }
+
+        ClosestObj?.m_InteractionActions?.Invoke(m_WeaponComponent);
     }
     #endregion
 
     public float m_Speed = 5f;
     [SerializeField]
-    private Transform m_CameraTransform;
+    private Transform m_CameraHolderTransform;
     private void Update()
     {
         transform.position += m_MovementVector * m_Speed * Time.deltaTime;
-        m_CameraTransform.localPosition = m_CameraOffset;
-    }
+        m_CameraHolderTransform.localPosition = m_CameraOffset;
 
+        UpdateInteractableDist();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D p_Collision)
@@ -163,23 +206,33 @@ public class JanitorController : MonoBehaviour
             return;
         }
 
-        m_Interactable = p_Collision.GetComponent<InteractableArea>();
-        if (m_Interactable == null)
-        {
-            return;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D p_Collision)
-    {
-        if (p_Collision.CompareTag("Interactable"))
+        var Interactable = p_Collision.GetComponent<InteractableArea>();
+        if (Interactable == null)
         {
             return;
         }
 
-        m_Interactable = p_Collision.GetComponent<InteractableArea>();
-        if (m_Interactable == null)
+        for (int i = 0; i < m_Interactables.Length; ++i)
         {
-            return;
+            if (m_Interactables[i].m_Interactable != Interactable)
+            {
+                continue;
+            }
+            m_Interactables[i].m_InRange = true;
+        }
+    }
+
+    private void UpdateInteractableDist()
+    {
+        for (int i = 0; i < m_Interactables.Length; ++i)
+        {
+            if (!m_Interactables[i].m_InRange)
+            {
+                continue;
+            }
+
+            m_Interactables[i].m_SqDist =
+                Vector3.SqrMagnitude(transform.position - m_Interactables[i].m_Interactable.transform.position);
         }
     }
 }
