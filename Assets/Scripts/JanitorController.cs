@@ -158,7 +158,7 @@ public class JanitorController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D p_Collision)
     {
-        if (p_Collision.CompareTag("Interactable"))
+        if (!p_Collision.CompareTag("Interactable"))
         {
             return;
         }
