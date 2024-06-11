@@ -42,3 +42,57 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Eye1
+    uniqueID: 3151034841
+    locked: 0
+  - name: Eye2
+    uniqueID: 2504722031
+    locked: 0
+  - name: Eye3
+    uniqueID: 1902294701
+    locked: 0
+  - name: Eye4
+    uniqueID: 1002757807
+    locked: 0
+  - name: Eye5
+    uniqueID: 1642585201
+    locked: 0
+  - name: Eye6
+    uniqueID: 67399013
+    locked: 0
+  - name: Eye7
+    uniqueID: 1204276165
+    locked: 0
+  - name: Eye8
+    uniqueID: 1637148007
+    locked: 0
+  - name: Eye9
+    uniqueID: 3408990313
+    locked: 0
+  - name: Eye10
+    uniqueID: 3032036677
+    locked: 0
+  - name: Eye11
+    uniqueID: 3600422089
+    locked: 0
+  - name: Eye12
+    uniqueID: 2541538029
+    locked: 0
+  - name: Eye13
+    uniqueID: 824201683
+    locked: 0
+  - name: Eye14
+    uniqueID: 3084543805
+    locked: 0
+  - name: Eye15
+    uniqueID: 737993541
+    locked: 0
+  - name: Eye16
+    uniqueID: 2241967465
+    locked: 0
+  - name: Eye17
+    uniqueID: 1801525875
+    locked: 0
+  - name: BODY
+    uniqueID: 4186269945
+    locked: 0

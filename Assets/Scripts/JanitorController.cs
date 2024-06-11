@@ -136,6 +136,17 @@ public class JanitorController : MonoBehaviour
     }
     #endregion
 
+    public void DamageCameraShake(int p_Amount)
+    {
+        float Len = Random.Range(.005f, .02f) * p_Amount;
+        float Rad = Random.Range(-Mathf.PI, Mathf.PI);
+        ShakeCamera(Len, Rad);
+    }
+    private void ShakeCamera(float p_Length, float p_Angle)
+    {
+        m_CameraTransform.localPosition = new Vector2(p_Length * Mathf.Cos(p_Angle), p_Length * Mathf.Sin(p_Angle));
+    }
+
     #region Interactions
     [SerializeField]
     private Transform m_CameraTransform;
@@ -145,14 +156,14 @@ public class JanitorController : MonoBehaviour
     private float m_CameraShakeRadiusMax = 8f;
     private void Attack(InputAction.CallbackContext p_Obj)
     {
-        if (!m_WeaponComponent.Attack(m_CameraOffset.normalized))
+        if (!m_WeaponComponent.Attack( ((Vector2)m_CameraOffset).normalized ))
         {
             return;
         }
 
         float ShakeRadius = Random.Range(m_WeaponComponent.m_CurrentWeapon.m_MinCameraShake, m_WeaponComponent.m_CurrentWeapon.m_MaxCameraShake);
         float ShakeAngle = Random.Range(-Mathf.PI, Mathf.PI);
-        m_CameraTransform.localPosition = new Vector2(ShakeRadius * Mathf.Cos(ShakeAngle), ShakeRadius * Mathf.Sin(ShakeAngle));
+        ShakeCamera(ShakeRadius, ShakeAngle);
     }
 
     [System.Serializable]

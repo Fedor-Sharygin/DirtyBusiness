@@ -65,7 +65,9 @@
     <Compile Include="Assets\Scripts\ObjectSocket.cs" />
     <Compile Include="Assets\Scripts\InteractableArea.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
+    <Compile Include="Assets\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Scripts\EnemyDescriptions\EnemyDescription.cs" />
+    <Compile Include="Assets\Scripts\EyeFollowingBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

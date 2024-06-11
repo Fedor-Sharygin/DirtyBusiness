@@ -11,7 +11,7 @@ using UnityEditor;
 public struct DamageReaction
 {
     public DamageType m_DamageType;
-    public UnityEvent m_Reaction;
+    public UnityEvent<int> m_Reaction;
 }
 
 

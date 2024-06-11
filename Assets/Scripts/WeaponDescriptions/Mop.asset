@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageType: 3
   m_Damage: 25
+  m_SafeDistance: 1.5
   m_Distance: 1.5
   m_RateOfFire: 1
   m_BlastRadius: 0.75
-  m_MinCameraShake: 0
-  m_MaxCameraShake: 0
+  m_MinCameraShake: 0.3
+  m_MaxCameraShake: 0.8
   m_WeaponSprite: {fileID: 0}

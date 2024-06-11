@@ -30,13 +30,12 @@ public class HealthComponent : MonoBehaviour
 
         foreach (var DR in m_DamageReactions)
         {
-            if (DR.m_DamageType != p_Type)
+            if ((DR.m_DamageType & p_Type) != p_Type)
             {
                 continue;
             }
 
-            DR.m_Reaction?.Invoke();
-            break;
+            DR.m_Reaction?.Invoke(p_Amount);
         }
     }
 

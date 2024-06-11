@@ -78,6 +78,6 @@ public class EnemyBehavior : MonoBehaviour
                 m_WeaponIdx--;
             }
         }
-        m_WeaponComponent.Attack((m_Target.position - transform.position).normalized);
+        m_WeaponComponent.Attack( ( (Vector2)(m_Target.position - transform.position) ).normalized );
     }
 }

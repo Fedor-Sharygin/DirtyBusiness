@@ -21,6 +21,7 @@ public class WeaponDescription : ScriptableObject
     public int m_Damage;
 
     [Space(5)]
+    public float m_SafeDistance;
     public float m_Distance;
     public float m_SqDistance { get { return m_Distance * m_Distance; } }
 
