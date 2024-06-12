@@ -62,12 +62,8 @@ public class EyeFollowingBehavior : MonoBehaviour
     {
         m_ShakeCurveX.Update();
         m_ShakeCurveY.Update();
-        if (Vector3.SqrMagnitude(transform.position - m_MaskTransform.position) >= 100 * m_SqTargetDist)
-        {
-            //transform.position = m_MaskTransform.position;
-        }
-        CheckTargetOffset();
 
+        CheckTargetOffset();
         transform.position =
             Vector3.Lerp(transform.position, m_TargetOffset, m_LerpPercent)
             + new Vector3(m_ShakeCurveX.Evaluate(), m_ShakeCurveY.Evaluate());

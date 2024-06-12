@@ -126,6 +126,7 @@ public class JanitorController : MonoBehaviour
         {
             //Debug.Log("MOUSE TOO FAR!!!!");
             m_CameraOffset = m_CameraOffset.normalized;
+            Mouse.current.WarpCursorPosition(m_CenterPosition + new Vector2(m_CameraOffset.x, m_CameraOffset.y) * m_MouseMaxDist);
         }
         m_CameraOffset *= m_CameraMaxDist;
         m_CameraOffset.z = -10;
