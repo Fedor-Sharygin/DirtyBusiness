@@ -68,6 +68,11 @@
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Scripts\EnemyDescriptions\EnemyDescription.cs" />
+    <Compile Include="Assets\Scripts\TimedObject.cs" />
+    <Compile Include="Assets\Sprites\ScalingRepeatPass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Sprites\CutoutRepeatShader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

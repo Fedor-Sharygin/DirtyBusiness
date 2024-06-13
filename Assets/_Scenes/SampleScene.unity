@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shoggoth
       objectReference: {fileID: 0}
+    - target: {fileID: 7085411975072499824, guid: 47ba124829c0e634da8c30bae513f6d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7085411975072499836, guid: 47ba124829c0e634da8c30bae513f6d8, type: 3}
       propertyPath: m_RootOrder
       value: 1

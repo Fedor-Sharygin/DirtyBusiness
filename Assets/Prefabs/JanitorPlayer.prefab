@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 7360760844044486000}
   - component: {fileID: 7360760844044486002}
   - component: {fileID: 7360760844044486003}
+  - component: {fileID: 9197726316161497690}
   m_Layer: 0
   m_Name: JanitorPlayer
   m_TagString: Untagged
@@ -307,7 +308,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3cc00e174c0b84185be11089d9c679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AttackAnimator: {fileID: 9197726316161497690}
+  m_Trigger: 
   m_CurrentWeapon: {fileID: 0}
+  m_PathPrefab: {fileID: 3229836865674350575, guid: 394a85838f9a36b4aa10d48bb47ab813, type: 3}
+  m_EndPointPrefab: {fileID: 8258109498818437309, guid: 4941f297cf9f3914c9c2836d35dc12b9, type: 3}
 --- !u!61 &7360760844044486002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -355,6 +360,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &9197726316161497690
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360760844044486004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6986788b41ac56849987526ba237bc1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7360760844214980888
 GameObject:
   m_ObjectHideFlags: 0
