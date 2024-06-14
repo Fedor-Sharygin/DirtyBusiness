@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public static void SpawnDirt(Vector3 p_Pos)
+    {
+        GameObject.FindFirstObjectByType<EnemyManager>()?.SpawnEnemyTypeAtPosition(2, p_Pos);
+    }
+    public void SpawnDirtLocal()
+    {
+        SpawnDirt(transform.position);
+    }
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
+
     public EnemyDescription m_Description;
 
     public Transform m_Target; //currently only player
@@ -25,8 +38,22 @@ public class EnemyBehavior : MonoBehaviour
         m_WeaponComponent.SwitchWeapon(m_CurrentWeapon);
     }
 
+    public bool m_FlipDirection;
+    private float m_XScaleSave = float.NaN;
     private void Update()
     {
+
+        if (m_FlipDirection)
+        {
+            if (float.IsNaN(m_XScaleSave))
+            {
+                m_XScaleSave = transform.localScale.x;
+            }
+            var lc = transform.localScale;
+            lc.x = m_XScaleSave * (m_Target.position.x > transform.position.x ? -1 : 1);
+            transform.localScale = lc;
+        }
+
         switch (m_State)
         {
             case BehaviorState.MOVE:

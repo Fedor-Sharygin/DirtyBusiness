@@ -6,6 +6,19 @@ using UnityEngine.Events;
 public class HealthComponent : MonoBehaviour
 {
     public int m_HealthPoints;
+    private int m_MaxHealthPoints;
+    public float HealthPercent
+    {
+        get
+        {
+            return (float)m_HealthPoints / (float)m_MaxHealthPoints;
+        }
+    }
+    private void Awake()
+    {
+        m_MaxHealthPoints = m_HealthPoints;
+    }
+
     public UnityEvent<DamageType> m_DeathReaction;
 
     public DamageReaction[] m_DamageReactions;

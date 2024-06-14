@@ -17,6 +17,7 @@ public class JanitorController : MonoBehaviour
     [SerializeField]
     private WeaponComponent m_WeaponComponent;
     private PlayerControls m_PlayerControls;
+    private Animator m_Animator;
     private void Awake()
     {
         m_PlayerControls = new PlayerControls();
@@ -33,6 +34,10 @@ public class JanitorController : MonoBehaviour
         m_CameraMovement    = m_PlayerControls.BasicPlayerControls.CameraControl;
         m_Attack            = m_PlayerControls.BasicPlayerControls.Attack;
         m_Interact          = m_PlayerControls.BasicPlayerControls.Interact;
+
+
+        m_Animator = GetComponentInChildren<Animator>();
+        //m_Animator.SetTrigger("Run");
     }
 
     #region Inputs Activation
@@ -103,16 +108,27 @@ public class JanitorController : MonoBehaviour
 
     #region Movement
     private Vector3 m_MovementVector = Vector3.zero;
+    private bool m_Running = false;
+    private bool m_PrevRunning = false;
     private void JanitorMovement_Perform(InputAction.CallbackContext p_Obj)
     {
+        m_PrevRunning = m_Running;
         m_MovementVector = p_Obj.ReadValue<Vector2>();
         if (m_MovementVector.sqrMagnitude > 1)
         {
             m_MovementVector.Normalize();
         }
+        m_Animator.SetFloat("Velocity", m_MovementVector.sqrMagnitude);
+        m_Running = m_MovementVector.sqrMagnitude > 0;
+        if (!m_PrevRunning && m_Running)
+        {
+            m_Animator.SetTrigger("Run");
+        }
     }
     private void JanitorMovement_Cancel(InputAction.CallbackContext p_Obj)
     {
+        m_Running = false;
+        m_Animator.SetFloat("Velocity", 0);
         m_MovementVector = Vector3.zero;
     }
 
@@ -127,6 +143,14 @@ public class JanitorController : MonoBehaviour
             //Debug.Log("MOUSE TOO FAR!!!!");
             m_CameraOffset = m_CameraOffset.normalized;
             //Mouse.current.WarpCursorPosition(m_CenterPosition + new Vector2(m_CameraOffset.x, m_CameraOffset.y) * m_MouseMaxDist);
+        }
+        if (m_CameraOffset.x > 0)
+        {
+            transform.GetChild(0).localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            transform.GetChild(0).localScale = new Vector3(1, 1, 1);
         }
         m_CameraOffset *= m_CameraMaxDist;
         m_CameraOffset.z = -10;
@@ -165,6 +189,7 @@ public class JanitorController : MonoBehaviour
         float ShakeRadius = Random.Range(m_WeaponComponent.m_CurrentWeapon.m_MinCameraShake, m_WeaponComponent.m_CurrentWeapon.m_MaxCameraShake);
         float ShakeAngle = Random.Range(-Mathf.PI, Mathf.PI);
         ShakeCamera(ShakeRadius, ShakeAngle);
+        //m_Animator.SetTrigger("Recoil");
     }
 
     [System.Serializable]

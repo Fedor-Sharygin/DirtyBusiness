@@ -68,6 +68,11 @@ public class WeaponComponent : MonoBehaviour
     private GameObject m_EndPointPrefab;
     private void DrawAttackPath(Vector2 p_Origin, Vector2 p_Direction, float p_Radius, float p_Distance)
     {
+        if (m_PathPrefab == null || m_EndPointPrefab == null)
+        {
+            return;
+        }
+
         Vector2 ToVector = new Vector2(1, 0);
         float ang = Vector2.Angle(p_Direction, ToVector);
         Vector3 cross = Vector3.Cross(p_Direction, ToVector);

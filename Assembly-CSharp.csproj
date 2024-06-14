@@ -58,18 +58,21 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthComponent.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\TimedObject.cs" />
     <Compile Include="Assets\Scripts\JanitorController.cs" />
     <Compile Include="Assets\Scripts\EyeFollowingBehavior.cs" />
     <Compile Include="Assets\Scripts\WeaponComponent.cs" />
     <Compile Include="Assets\Scripts\WeaponDescriptions\WeaponDescription.cs" />
     <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\ObjectSocket.cs" />
+    <Compile Include="Assets\Sprites\ScalingRepeatPass.cs" />
     <Compile Include="Assets\Scripts\InteractableArea.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Scripts\EnemyDescriptions\EnemyDescription.cs" />
-    <Compile Include="Assets\Scripts\TimedObject.cs" />
-    <Compile Include="Assets\Sprites\ScalingRepeatPass.cs" />
+    <Compile Include="Assets\Scripts\TimedDamage.cs" />
+    <Compile Include="Assets\Scripts\Dirt.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sprites\CutoutRepeatShader.shader" />

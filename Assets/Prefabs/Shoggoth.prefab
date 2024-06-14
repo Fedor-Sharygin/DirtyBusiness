@@ -77,8 +77,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -1790245265
   m_BackSortingLayerID: -1790245265
-  m_FrontSortingLayer: 2
-  m_BackSortingLayer: 2
+  m_FrontSortingLayer: -17
+  m_BackSortingLayer: -17
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -160,8 +160,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 67399013
   m_BackSortingLayerID: 67399013
-  m_FrontSortingLayer: 6
-  m_BackSortingLayer: 6
+  m_FrontSortingLayer: -13
+  m_BackSortingLayer: -13
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -243,8 +243,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 1002757807
   m_BackSortingLayerID: 1002757807
-  m_FrontSortingLayer: 4
-  m_BackSortingLayer: 4
+  m_FrontSortingLayer: -15
+  m_BackSortingLayer: -15
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -326,8 +326,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -1262930619
   m_BackSortingLayerID: -1262930619
-  m_FrontSortingLayer: 10
-  m_BackSortingLayer: 10
+  m_FrontSortingLayer: -9
+  m_BackSortingLayer: -9
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -409,8 +409,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 824201683
   m_BackSortingLayerID: 824201683
-  m_FrontSortingLayer: 13
-  m_BackSortingLayer: 13
+  m_FrontSortingLayer: -6
+  m_BackSortingLayer: -6
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -492,8 +492,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -1210423491
   m_BackSortingLayerID: -1210423491
-  m_FrontSortingLayer: 14
-  m_BackSortingLayer: 14
+  m_FrontSortingLayer: -5
+  m_BackSortingLayer: -5
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -575,8 +575,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 1642585201
   m_BackSortingLayerID: 1642585201
-  m_FrontSortingLayer: 5
-  m_BackSortingLayer: 5
+  m_FrontSortingLayer: -14
+  m_BackSortingLayer: -14
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -658,8 +658,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 737993541
   m_BackSortingLayerID: 737993541
-  m_FrontSortingLayer: 15
-  m_BackSortingLayer: 15
+  m_FrontSortingLayer: -4
+  m_BackSortingLayer: -4
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -741,8 +741,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -1143932455
   m_BackSortingLayerID: -1143932455
-  m_FrontSortingLayer: 1
-  m_BackSortingLayer: 1
+  m_FrontSortingLayer: -18
+  m_BackSortingLayer: -18
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -824,8 +824,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -694545207
   m_BackSortingLayerID: -694545207
-  m_FrontSortingLayer: 11
-  m_BackSortingLayer: 11
+  m_FrontSortingLayer: -8
+  m_BackSortingLayer: -8
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -907,8 +907,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -2052999831
   m_BackSortingLayerID: -2052999831
-  m_FrontSortingLayer: 16
-  m_BackSortingLayer: 16
+  m_FrontSortingLayer: -3
+  m_BackSortingLayer: -3
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -990,8 +990,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -885976983
   m_BackSortingLayerID: -885976983
-  m_FrontSortingLayer: 9
-  m_BackSortingLayer: 9
+  m_FrontSortingLayer: -10
+  m_BackSortingLayer: -10
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -1073,8 +1073,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 1801525875
   m_BackSortingLayerID: 1801525875
-  m_FrontSortingLayer: 17
-  m_BackSortingLayer: 17
+  m_FrontSortingLayer: -2
+  m_BackSortingLayer: -2
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -1169,7 +1169,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -108697351
-  m_SortingLayer: 18
+  m_SortingLayer: -1
   m_SortingOrder: 50
   m_Sprite: {fileID: -7597043021877550796, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1215,6 +1215,7 @@ GameObject:
   - component: {fileID: 7085411975072499837}
   - component: {fileID: 7085411975072499826}
   - component: {fileID: 7085411975072499827}
+  - component: {fileID: 3932785937813323376}
   m_Layer: 0
   m_Name: Shoggoth
   m_TagString: Untagged
@@ -1270,8 +1271,48 @@ MonoBehaviour:
   m_HealthPoints: 50
   m_DeathReaction:
     m_PersistentCalls:
-      m_Calls: []
-  m_DamageReactions: []
+      m_Calls:
+      - m_Target: {fileID: 7085411975072499837}
+        m_TargetAssemblyTypeName: EnemyBehavior, Assembly-CSharp
+        m_MethodName: SpawnDirtLocal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7085411975072499837}
+        m_TargetAssemblyTypeName: EnemyBehavior, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_DamageReactions:
+  - m_DamageType: -1
+    m_Reaction:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3932785937813323376}
+          m_TargetAssemblyTypeName: TimedDamage, Assembly-CSharp
+          m_MethodName: DamageReceived
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &7085411975072499827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,7 +1325,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3cc00e174c0b84185be11089d9c679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AttackAnimator: {fileID: 7845303422224797328}
+  m_Trigger: 
   m_CurrentWeapon: {fileID: 11400000, guid: 52afcee38859e4742bb396d1d3c58b1e, type: 2}
+  m_PathPrefab: {fileID: 0}
+  m_EndPointPrefab: {fileID: 0}
+--- !u!114 &3932785937813323376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085411975072499824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9d58ef552a90a46952c628a8a9d3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SpriteRenderers:
+  - {fileID: 7085411974510171976}
 --- !u!1 &7085411975822772819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,8 +1469,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 1902294701
   m_BackSortingLayerID: 1902294701
-  m_FrontSortingLayer: 3
-  m_BackSortingLayer: 3
+  m_FrontSortingLayer: -16
+  m_BackSortingLayer: -16
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -1492,9 +1551,9 @@ SpriteMask:
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: -1753429267
-  m_BackSortingLayerID: 0
-  m_FrontSortingLayer: 12
-  m_BackSortingLayer: 0
+  m_BackSortingLayerID: -1753429267
+  m_FrontSortingLayer: -7
+  m_BackSortingLayer: -7
   m_FrontSortingOrder: 12
   m_BackSortingOrder: 12
   m_IsCustomRangeActive: 1
@@ -1630,8 +1689,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 1637148007
   m_BackSortingLayerID: 1637148007
-  m_FrontSortingLayer: 8
-  m_BackSortingLayer: 8
+  m_FrontSortingLayer: -11
+  m_BackSortingLayer: -11
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -1713,8 +1772,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 1204276165
   m_BackSortingLayerID: 1204276165
-  m_FrontSortingLayer: 7
-  m_BackSortingLayer: 7
+  m_FrontSortingLayer: -12
+  m_BackSortingLayer: -12
   m_FrontSortingOrder: 50
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -1732,7 +1791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8456381471462262450, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 13
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: -8456381471462262450, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1744,7 +1803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7858235010122834533, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 12
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: -7858235010122834533, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1800,7 +1859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7421489143927335870, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 16
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: -7421489143927335870, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1832,7 +1891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6156796928880361608, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: -6156796928880361608, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1844,7 +1903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5923362455493806766, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 8
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: -5923362455493806766, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1856,7 +1915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5145579773095929785, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 11
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: -5145579773095929785, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1868,7 +1927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4589414802646615774, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: -4589414802646615774, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1896,7 +1955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2507023263711893045, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 17
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: -2507023263711893045, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1908,7 +1967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2421421833927396986, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 14
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: -2421421833927396986, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1920,7 +1979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1817518477900718883, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: -1817518477900718883, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1932,7 +1991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 405673974912354544, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 405673974912354544, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1944,7 +2003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2438160285309722646, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 2438160285309722646, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1956,7 +2015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2575559266613789986, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 2575559266613789986, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1976,7 +2035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4172475439260451579, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 4172475439260451579, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -1992,7 +2051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4750475708829972309, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 10
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 4750475708829972309, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -2008,7 +2067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796690877601744537, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 1
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 6796690877601744537, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
@@ -2024,7 +2083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9122767252751407183, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayer
-      value: 15
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 9122767252751407183, guid: 6dc1ae3bcfe10944aac0db6d85e2e145, type: 3}
       propertyPath: m_SortingLayerID
